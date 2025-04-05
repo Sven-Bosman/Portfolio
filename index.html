@@ -15,11 +15,22 @@
     <main>
         <img src="img/favicon.png" alt="" srcset="">
         <h1>Sven Bosman</h1>
-        <i class="bi bi-list"></i>
+        <!-- <i class="bi bi-list dropdown">
+            
+        </i> -->
+        <div class="dropdown i">
+            <a class="bi bi-list" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
     </main>
     <nav>
-        <ul class="nav justify-content-center list">
-            <li class="nav-item">
+        <ul class="nav justify-content-center list dropdown">
+            <li class="nav-item dropdown-item">
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
@@ -34,8 +45,15 @@
         </ul>
     </nav>
     <div id="content" class="content">
+      
+        <div class="about" id="about">
+            <h2>About</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.</p>
+        </div>
         <div class="img_h" id="img_h">
-            <h2>test</h2>
+            <h2>Images</h2>
             <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                   <div class="carousel-item active" data-bs-interval="1000">
@@ -56,15 +74,15 @@
                   <span class="carousel-control-next-icon" aria-hidden="true"></span>
                   <span class="visually-hidden">Next</span>
                 </button>
-              </div>
-                
-
-
             </div>
-            
         </div>
+        
     </div>
-    <footer></footer>
+    <footer>
+      <h3>Info</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.</p>
+
+    </footer>
 </body>
 <script src="js/main.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>

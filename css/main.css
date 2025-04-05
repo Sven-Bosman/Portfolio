@@ -43,17 +43,40 @@
     }
     main h1{
         font-size: 8rem;
+        margin-left: 7rem;
     }
-    main i{
+    main .i{
         font-size: 6rem;
         margin-right: 5%;
+        
+    }
+    main .i a{
+      color: wheat;     
+    }
+    main .i ul{
+        font-size: 1rem;
+        margin-right: 5%;
+        mix-blend-mode: normal;
+    }
+    main .i ul li{
+        list-style: none;
+        padding: 0.5rem;
+        margin: 0.5rem;
+        color: var(--fourth-color);
     }
     nav{
         display: none;
     }
     .img_h{
         width: 40vh;
-        height: fit-content;
+        height: 40vh;
+        
+    }
+
+    .img_h h2{
+        font-size: 3rem;
+        padding-top: 1rem;
+        color: var(--third-color);
     }
     #carousel{
         width: 100%;
@@ -81,17 +104,29 @@
     main h1{
         font-size: 5rem;
         padding-right: 4%;
+        margin-left: 7rem;
     }
-    main i{
+    main .i{
         font-size: 6rem;
-
+        margin-right: 5%;
     }
     nav{
         display: none;
     }
     .img_h{
+        width: 20vh;
+        height: 20vh;
+    }
+
+    #carousel{
         width: 100%;
         height: 100%;
+        object-fit: contain;
+    }
+    .carousel-item img{
+        width: 100%;
+        height: 100%;
+        
     }
 
 }
@@ -101,7 +136,7 @@
         font-size: 2rem;
         padding-right: 4%;
     }
-    main i{
+    main .i{
         display: none;
     }
     nav{
@@ -152,13 +187,21 @@ main{
     display: flex;
  
 }
-main i{
+main .i{
     color: var(--third-color);
     text-align: center;
     padding-top: 0.1%;
-    mix-blend-mode: difference;
     justify-self: center;
 }
+
+main .i ul li a{
+    list-style: none;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    color: var(--fourth-color);
+}
+
+
 main h1{
     color: var(--third-color);
     text-align: center;
@@ -169,6 +212,7 @@ main h1{
 main img{
     width: 6rem;
     height: fit-content;
+    position: fixed;
     mix-blend-mode: difference;
     object-fit: scale-down;
 }
@@ -195,6 +239,13 @@ nav .list{
     align-items: center;
 }
 
+.img_h h2{
+    color: var(--third-color);
+    text-align: center;
+    padding-top: 1rem;
+    justify-self: center;
+}
+
 #carousel{
     display: flex;
     justify-content: center;
@@ -213,4 +264,28 @@ nav .list{
     object-fit: cover;
     border-radius: 10px;
     box-shadow: 0px 0px 20px var(--main-color);
+}
+
+.text_h{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    color: #ffffff;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    width: 100%;
+    background-color: var(--second-color);
+    border-top: double 3px #000000;
+}
+footer h2{
+    color: var(--third-color);
+    text-align: center;
+    padding-top: 1rem;
+    justify-self: center;
 }
