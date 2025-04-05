@@ -21,9 +21,22 @@ header{
     border-bottom: double 3px #000000;
 }
 main{
-
+    height: 100vh;
+    width: 100vh;
+    background-image: url(../img/eb40cd26cf2f9e18cd01b8bc07495121.jpg);
+    background-repeat: no-repeat;
+    
 }
 h1{
-
-  color: inherit;
+    font-size: 3rem;
+    color: var(--third-color);
+    text-align: center;
+    padding-top: 2rem;
+    mix-blend-mode: difference;
+}
+img{
+    width: 10%;
+    height: 10%;
+    object-fit: cover;
+    mix-blend-mode: difference;
 }
