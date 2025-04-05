@@ -1,0 +1,29 @@
+:root{
+    --main-color: #572424;
+    --second-color: #000000;
+    --third-color: #ffffff;
+    --fourth-color: #000000;
+    --fifth-color: #ffffff;
+}
+
+
+*{padding: 0%; margin: 0%;}
+
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background: linear-gradient(to bottom, var(--third-color), #000000) no-repeat fixed;
+}
+
+header{
+    height: 6rem;
+    width: 100%;
+    background-color: var(--second-color);
+    border-bottom: double 3px #000000;
+}
+main{
+
+}
+h1{
+
+  color: inherit;
+}
