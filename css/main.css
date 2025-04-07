@@ -126,8 +126,6 @@
     nav{
         display: flex;
     }
-<<<<<<< Updated upstream
-=======
 
     
     nav .list{
@@ -138,7 +136,6 @@
         background-color: var(--second-color);
         border-bottom: double 3px #000000;
     }
->>>>>>> Stashed changes
     
     
     .img_h{
