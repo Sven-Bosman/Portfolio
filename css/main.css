@@ -1,9 +1,13 @@
 :root{
-    --main-color: #572424;
-    --second-color: #000000;
-    --third-color: #ffffff;
-    --fourth-color: #000000;
-    --fifth-color: #ffffff;
+    --main-color: #000000;
+    --second-color: #ffffff;
+    --third-color: #777777;
+    --fourth-color: #618f96;
+    --fifth-color: #6a7b93;
+    --icon-color: wheat;
+    --main-h1-margin-left: calc(12vw + 5vw);
+    --main-h1-height: calc(10vh + 5vh);
+    --main-h1-width: calc(10vh + 5vh);
 }
 
 /* normal desktop size */
@@ -14,7 +18,7 @@
     
     main h1{
         font-size: 11rem;
-        padding-right: 4%;
+
     }
     main i{
         font-size: 3rem;
@@ -43,16 +47,14 @@
     }
     main h1{
         font-size: 8rem;
-        margin-left: 7rem;
+        margin-left: 12vw;
     }
     main .i{
         font-size: 6rem;
         margin-right: 5%;
         
     }
-    main .i a{
-      color: wheat;     
-    }
+
     main .i ul{
         font-size: 1rem;
         margin-right: 5%;
@@ -70,6 +72,7 @@
     .img_h{
         width: 40vh;
         height: 40vh;
+        margin-right: 6%;
         
     }
 
@@ -100,11 +103,15 @@
         background-size: cover;
         display: flex;
     }
+    main img{
+        height: var(--main-h1-height);
+        width: var(--main-h1-width);
+    }
     
     main h1{
         font-size: 5rem;
         padding-right: 4%;
-        margin-left: 7rem;
+        margin-left: var(--main-h1-margin-left);
     }
     main .i{
         font-size: 6rem;
@@ -113,6 +120,7 @@
     nav{
         display: none;
     }
+
     .img_h{
         width: 20vh;
         height: 20vh;
@@ -132,15 +140,36 @@
 }
 /* Mobile size */
 @media screen and (max-width: 768px) {
+    main{
+        height: 10vh;
+        width: 100%;
+        background-image: url(../img/city1.jpg) ;
+        scale: cover;
+        background-size: cover;
+        display: flex;
+    }
+    
     main h1{
         font-size: 2rem;
-        padding-right: 4%;
+        margin-left: 30%;
     }
     main .i{
         display: none;
     }
+
+    main img{
+        height: calc(var(--main-h1-height) - 5vh);
+        width: calc(var(--main-h1-width) - 5vh);
+        position: fixed;
+        mix-blend-mode: difference;
+        object-fit: scale-down;
+    }
     nav{
         display: flex;
+    }
+
+    nav .list{
+        flex-wrap: nowrap;
     }
     
     .img_h{
@@ -160,11 +189,7 @@
 
 
 
-
-
-
-
-
+/* normal CSS */
 *{padding: 0%; margin: 0%;}
 
 body{
@@ -194,6 +219,10 @@ main .i{
     justify-self: center;
 }
 
+main .i a{
+    color: var(--icon-color);     
+  }
+
 main .i ul li a{
     list-style: none;
     padding: 0.5rem;
@@ -210,11 +239,8 @@ main h1{
     justify-self: center;
 }
 main img{
-    width: 6rem;
-    height: fit-content;
     position: fixed;
     mix-blend-mode: difference;
-    object-fit: scale-down;
 }
 nav .list{
     display: flex;
@@ -227,7 +253,7 @@ nav .list{
 .content{
     display: flex;
     justify-content: flex-start;
-    flex-direction: column;
+    flex-direction: row-reverse;
     height: 100%;
     width: 100%;
 }
@@ -288,4 +314,33 @@ footer h2{
     text-align: center;
     padding-top: 1rem;
     justify-self: center;
+}
+
+.about{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    max-width: 40%;
+    flex-direction: column;
+    background-color: var(--main-color);
+    border-top: double 3px #000000;
+    flex-wrap: nowrap;
+    align-content: baseline;
+}
+.about h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 3.3rem;
+    padding-left: 7%;
+    padding-right: 7%;
+
+}
+
+.about p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5rem;
+    color: var(--second-color);
+    text-align: center;
+    padding: 1rem;
+    margin: 0.5rem;
+    width: 100%;
 }
