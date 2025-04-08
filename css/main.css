@@ -8,12 +8,14 @@
     --main-h1-margin-left: calc(12vw + 5vw);
     --main-h1-height: calc(10vh + 5vh);
     --main-h1-width: calc(10vh + 5vh);
+    --main-height: calc(10vh + 5vh);
+    --foot-color: #686868;
 }
 
 /* normal desktop size */
 @media screen and (min-width: 1920px) {
     main{
-        height: 50vh;
+        height: 30vh;
     }
     
     main h1{
@@ -64,7 +66,7 @@
 /* Laptop zise */
 @media screen and (min-width: 1280px) and (max-width: 1920px) {
     main{
-        height: 50vh;
+        height: 30vh;
     }
     main h1{
         font-size: 8rem;
@@ -79,9 +81,21 @@
         
     }
 
-    main .i .btn{
+    main .i #btn{
         display: block;
+        height: 6vh;
+        width: 7vh;
         border-radius: 20%;
+        margin-top: 5vh;
+        margin-right: 7vw ;
+        font-size: x-large;
+    }
+
+    .drop #list{
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        color: aqua;
     }
 
     main .i .drop{
@@ -94,6 +108,7 @@
         font-size: 1rem;
         margin-right: 5%;
         mix-blend-mode: normal;
+        padding-left: 0%;
     }
     main .i ul li{
         list-style: none;
@@ -157,7 +172,7 @@
 /* Tablet size */
 @media screen and (min-width: 768px) and (max-width: 1280px) {
     main{
-        height: 30vh;
+        height: 20vh;
         width: 100%;
         background-image: url(../img/city1.jpg) ;
         scale: cover;
@@ -334,6 +349,15 @@ main .i{
     text-align: center;
     padding-top: 0.1%;
     justify-self: center;
+    align-items: flex-end;
+}
+
+main .i .drop{
+    border: #000000 4px solid;
+}
+
+.drop #list{
+    display: flex;
 }
 
 main .i a{
@@ -417,7 +441,7 @@ footer{
     align-items: center;
     height: 10vh;
     width: 100%;
-    background-color: var(--second-color);
+    background-color: var(--foot-color);
     border-top: double 3px #000000;
 }
 footer h2{
