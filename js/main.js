@@ -5,7 +5,7 @@ let list = document.getElementById("list");
 
 btn.addEventListener("click",  dropdown); 
 
-setInterval(check, 1000);
+setInterval(check, 500);
 
 
 

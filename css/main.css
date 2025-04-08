@@ -20,6 +20,7 @@
     
     main h1{
         font-size: 11rem;
+        margin-left: 16vw;
 
     }
     main .i{
@@ -70,7 +71,7 @@
     }
     main h1{
         font-size: 8rem;
-        margin-left: 12vw;
+        margin-left: 16vw;
     }
     main .i{
         font-size: 6rem;
@@ -186,8 +187,7 @@
     
     main h1{
         font-size: 5rem;
-        padding-right: 4%;
-        margin-left: var(--main-h1-margin-left);
+        margin-left: 20vw;;
     }
     main .i{
         font-size: 6rem;
@@ -327,6 +327,9 @@
 body{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     background: linear-gradient(to bottom, var(--third-color), #000000) no-repeat fixed;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 header{
@@ -336,7 +339,6 @@ header{
     border-bottom: double 3px #000000;
 }
 main{
-
     width: 100%;
     background-image: url(../img/city1.jpg) ;
     background-size: cover;
@@ -387,39 +389,16 @@ main img{
 
 .content{
     display: flex;
-    justify-content: flex-start;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: flex-start;
+    justify-content: space-between;
     flex-direction: row-reverse;
-    height: 100%;
+    height: fit-content;
     width: 100%;
-}
-.img_h{
-    display: flex;
-    border: #ffffff 2px solid;
-    align-self: flex-end;
-    flex-direction: column;
-    align-items: center;
+    color: var(--second-color);
 }
 
-.img_h h2{
-    color: var(--third-color);
-    text-align: center;
-    padding-top: 1rem;
-    justify-self: center;
-}
-
-#carousel{
-    display: flex;
-    justify-content: center;
-    
-    height: fit-content;
-
-}
-.carousel-item{
-    display: flex;
-    justify-content: center;
-    height: fit-content;
-  
-}
 
 .carousel-item img{
     object-fit: cover;
@@ -439,8 +418,9 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
+    align-self: flex-end;
     height: 10vh;
-    width: 100%;
+    width: 100vw;
     background-color: var(--foot-color);
     border-top: double 3px #000000;
 }
@@ -454,7 +434,8 @@ footer h2{
 .about{
     display: flex;
     align-items: center;
-    height: 100vh;
+    height: 50vh;
+    margin-top: 10%;
     max-width: 40%;
     flex-direction: column;
     background-color: var(--main-color);
@@ -467,6 +448,7 @@ footer h2{
     font-size: 3.3rem;
     padding-left: 7%;
     padding-right: 7%;
+    color: var(--second-color);
 
 }
 
