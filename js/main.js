@@ -3,9 +3,33 @@ let btn = document.getElementById("btn");
 let drop = document.getElementById("drop");
 let list = document.getElementById("list");
 
+let input = document.getElementById("input");
+
+
 btn.addEventListener("click",  dropdown); 
 
 setInterval(check, 500);
+
+
+input.addEventListener("keyup", test);
+
+
+
+
+
+function test(){
+    var inputValue = input.value;
+
+    if(inputValue == "easteregg"){
+        alert("Easter Egg!");
+    }
+    else{
+        console.log(inputValue);
+    }
+
+ 
+
+}
 
 
 
