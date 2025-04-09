@@ -181,8 +181,11 @@
         display: flex;
     }
     main img{
-        height: var(--main-h1-height);
-        width: var(--main-h1-width);
+        height: calc(var(--main-h1-height) - 5vh);
+        width: calc(var(--main-h1-width) - 5vh);
+        position: fixed;
+        mix-blend-mode: difference;
+        object-fit: scale-down;
     }
     
     main h1{
@@ -250,6 +253,10 @@
         height: 100%;
         
     }
+    .content{
+        min-height: calc(100vh - 10vh);
+        max-height: fit-content;
+    }
 }
 
 
@@ -292,8 +299,6 @@
     }
 
 
-
-
     .i nav{
         display: none;
         flex-wrap: nowrap;
@@ -303,20 +308,13 @@
         border-bottom: double 3px #000000;
     }
     
-    
-    .img_h{
-        width: 3vh;
-        height: 3vh;
+    .content{
+        min-height: calc(100vh - 10vh);
     }
-    #carousel{
-        width: 100%;
-        height: 100%;
+
+    .about{
+        height: fit-content;
     }
-    .carousel-item img{
-        width: 4vh;
-        height: 100%;
-    }
-   
 }
 
 
@@ -394,7 +392,6 @@ main img{
     align-items: flex-start;
     justify-content: space-between;
     flex-direction: row-reverse;
-    height: fit-content;
     width: 100%;
     color: var(--second-color);
 }
@@ -434,7 +431,7 @@ footer h2{
 .about{
     display: flex;
     align-items: center;
-    height: 50vh;
+    height: fit-content;
     margin-top: 10%;
     max-width: 40%;
     flex-direction: column;
@@ -446,8 +443,8 @@ footer h2{
 .about h1{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 3.3rem;
-    padding-left: 7%;
-    padding-right: 7%;
+    padding-left: 2%;
+    padding-right: 2%;
     color: var(--second-color);
 
 }
@@ -460,5 +457,9 @@ footer h2{
     padding: 1rem;
     margin: 0.5rem;
     width: 100%;
+}
+
+.cv{
+    align-self: self-end;
 }
 /* comment */
