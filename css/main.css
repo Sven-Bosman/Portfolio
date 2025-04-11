@@ -1,3 +1,10 @@
+@tailwindcss/utilities;
+@tailwindcss/base;
+@tailwindcss/components;
+@tailwindcss/forms;
+
+
+
 :root{
     --main-color: #000000;
     --second-color: #ffffff;
@@ -439,6 +446,7 @@ footer h2{
     border-top: double 3px #000000;
     flex-wrap: nowrap;
     align-content: baseline;
+    margin-left: 6vw;
 }
 .about h1{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -461,5 +469,9 @@ footer h2{
 
 .cv{
     align-self: self-end;
+}
+
+.projects{
+    margin-left: 5%;
 }
 /* comment */
