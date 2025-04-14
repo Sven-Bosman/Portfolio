@@ -475,7 +475,7 @@ footer h2{
 }
 
 .projects{
-    margin-left: 5%;
+    margin-left: 8vw;
 }
 
 
@@ -487,7 +487,19 @@ footer h2{
 
 .holder{
     display: grid;
-    
+    grid-template-columns: repeat(2, 20vw);
+    margin-left: 3.6vw;
+    row-gap: 4vh;
+    column-gap: 4vw;
+}
+
+.proj{
+    display: inherit;
+    grid-template-rows: repeat(2, 17.5vh);
+    grid-template-columns: repeat(1, 20vw);
+    width: 20vw;
+    height: 35vh;
+    border: #000000 1px solid;
 }
 
 
