@@ -92,7 +92,6 @@
     main .i #btn{
         display: block;
         height: 6vh;
-        width: 7vh;
         border-radius: 20%;
         margin-top: 5vh;
         margin-right: 7vw ;
@@ -357,6 +356,10 @@ main .i{
     padding-top: 0.1%;
     justify-self: center;
     align-items: flex-end;
+    width: fit-content;
+}
+.i #btn{
+    width: fit-content;
 }
 
 main .i .drop{
