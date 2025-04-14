@@ -477,4 +477,18 @@ footer h2{
 .projects{
     margin-left: 5%;
 }
+
+
+
+#google_translate_element{
+    width: 3vw;
+    height: fit-content;
+}
+
+.holder{
+    display: grid;
+    
+}
+
+
 /* comment */

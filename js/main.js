@@ -57,3 +57,7 @@ function check(){
 }
 
 
+const translation = {
+    nl: {welcome: "Welkom", button: "klik mij"}, 
+    en:  {welcome: "Welcome", button: "click me"}
+}
