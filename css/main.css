@@ -1,506 +1,157 @@
-@tailwindcss/utilities;
-@tailwindcss/base;
-@tailwindcss/components;
-@tailwindcss/forms;
 
 
-
-:root{
-    --main-color: #000000;
-    --second-color: #ffffff;
-    --third-color: #777777;
-    --fourth-color: #618f96;
-    --fifth-color: #6a7b93;
-    --icon-color: wheat;
-    --main-h1-margin-left: calc(12vw + 5vw);
-    --main-h1-height: calc(10vh + 5vh);
-    --main-h1-width: calc(10vh + 5vh);
-    --main-height: calc(10vh + 5vh);
-    --foot-color: #686868;
-}
-
-/* normal desktop size */
-@media screen and (min-width: 1920px) {
-    main{
-        height: 30vh;
-    }
-    
-    main h1{
-        font-size: 11rem;
-        margin-left: 16vw;
-
-    }
-    main .i{
-        display: flex;
-        flex-direction: column;
-    }
-
-    main .i .drop{
-       margin-top: 3vh;
-       border-radius: 10%;
-    }
-    nav{
-        display: none;
-    }
-
-    nav .list{
-        display: none;
-    }
-
-
-    .i nav{
-        display: none;
-        flex-wrap: nowrap;
-        height: fit-content;
-        width: 100%;
-        background-color: var(--second-color);
-        border-bottom: double 3px #000000;
-    }
-
-    .img_h{
-        width: 100%;
-        height: 100%;
-    }
-    #carousel{
-        width: 100%;
-        height: 100%;
-    }
-    .carousel-item img{
-        width: 100%;
-        height: 100%;
-    }
-}
-
-/* Laptop zise */
-@media screen and (min-width: 1280px) and (max-width: 1920px) {
-    main{
-        height: 30vh;
-    }
-    main h1{
-        font-size: 8rem;
-        margin-left: 16vw;
-    }
-    main .i{
-        font-size: 6rem;
-        margin-right: 5%;
-        height: fit-content;
-        display: flex;
-        flex-direction: column;
-        
-    }
-
-    main .i #btn{
-        display: block;
-        height: 6vh;
-        border-radius: 20%;
-        margin-top: 5vh;
-        margin-right: 7vw ;
-        font-size: x-large;
-    }
-
-    .drop #list{
-        display: flex;
-        flex-direction: column;
-        list-style: none;
-        color: aqua;
-    }
-
-    main .i .drop{
-        margin-top: 3vh;
-        border-radius: 10%;
-     }
-
-
-    main .i ul{
-        font-size: 1rem;
-        margin-right: 5%;
-        mix-blend-mode: normal;
-        padding-left: 0%;
-    }
-    main .i ul li{
-        list-style: none;
-        padding: 0.5rem;
-        margin: 0.5rem;
-        color: var(--fourth-color);
-    }
-    nav{
-        display: none;
-    }
-
-    nav .list{
-        display: none;
-    }
-
-
-    .i nav{
-        display: none;
-        flex-wrap: nowrap;
-        height: fit-content;
-        width: 100%;
-        background-color: var(--second-color);
-        border-bottom: double 3px #000000;
-    }
-
-    nav .list{
-        display: none;
-    }
-
-
-    .img_h{
-        width: 40vh;
-        height: 40vh;
-        margin-right: 6%;
-        
-    }
-
-    .img_h h2{
-        font-size: 3rem;
-        padding-top: 1rem;
-        color: var(--third-color);
-    }
-    #carousel{
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
-    }
-    .carousel-item img{
-        width: 100%;
-        height: 100%;
-        
-    }
-}
-
-
-
-
-
-
-
-/* Tablet size */
-@media screen and (min-width: 768px) and (max-width: 1280px) {
-    main{
-        height: 20vh;
-        width: 100%;
-        background-image: url(../img/city1.jpg) ;
-        scale: cover;
-        background-size: cover;
-        display: flex;
-    }
-    main img{
-        height: calc(var(--main-h1-height) - 5vh);
-        width: calc(var(--main-h1-width) - 5vh);
-        position: fixed;
-        mix-blend-mode: difference;
-        object-fit: scale-down;
-    }
-    
-    main h1{
-        font-size: 5rem;
-        margin-left: 20vw;;
-    }
-    main .i{
-        font-size: 6rem;
-        margin-right: 5%;
-    }
-
-    .nav{
-        display: flex;
-    }
-
-    .i nav{
-        display: none;
-        flex-wrap: nowrap;
-        height: fit-content;
-        width: 100%;
-        background-color: var(--second-color);
-        border-bottom: double 3px #000000;
-    }
-
-    .i .drop{
-        display: none;
-        flex-wrap: nowrap;
-        height: fit-content;
-        width: 100%;
-        background-color: var(--second-color);
-        border-bottom: double 3px #000000;
-    }
-
-    nav{
-        display: flex;
-        flex-wrap: wrap;
-        height: fit-content;
-        width: 100%;
-        background-color: var(--second-color);
-        border-bottom: double 3px #000000;
-    }
-
-
-    nav .list{
-        display: flex;
-        flex-wrap: nowrap;
-        height: fit-content;
-        width: 100%;
-        background-color: var(--second-color);
-        border-bottom: double 3px #000000;
-    }
-
-    .img_h{
-        width: 20vh;
-        height: 20vh;
-    }
-
-    #carousel{
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
-    }
-    .carousel-item img{
-        width: 100%;
-        height: 100%;
-        
-    }
-    .content{
-        min-height: calc(100vh - 10vh);
-        max-height: fit-content;
-    }
-}
-
-
-
-/* Mobile size */
-@media screen and (max-width: 768px) {
-    main{
-        height: 10vh;
-        width: 100%;
-        background-image: url(../img/city1.jpg) ;
-        scale: cover;
-        background-size: cover;
-        display: flex;
-    }
-    
-    main h1{
-        font-size: 2rem;
-        margin-left: 30%;
-    }
-    main .i{
-        display: none;
-    }
-
-    main img{
-        height: calc(var(--main-h1-height) - 5vh);
-        width: calc(var(--main-h1-width) - 5vh);
-        position: fixed;
-        mix-blend-mode: difference;
-        object-fit: scale-down;
-    }
-
-    
-    nav .list{
-        display: flex;
-        flex-wrap: nowrap;
-        height: fit-content;
-        width: 100%;
-        background-color: var(--second-color);
-        border-bottom: double 3px #000000;
-    }
-
-
-    .i nav{
-        display: none;
-        flex-wrap: nowrap;
-        height: fit-content;
-        width: 100%;
-        background-color: var(--second-color);
-        border-bottom: double 3px #000000;
-    }
-    
-    .content{
-        min-height: calc(100vh - 10vh);
-    }
-
-    .about{
-        height: fit-content;
-    }
-}
-
-
-
-/* normal CSS */
-*{padding: 0%; margin: 0%;}
+*{ margin: 0%; padding: 0%;}
 
 body{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background: linear-gradient(to bottom, var(--third-color), #000000) no-repeat fixed;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+    margin: inherit; padding: inherit;
 }
 
-header{
-    height: 6rem;
-    width: 100%;
-    background-color: var(--second-color);
-    border-bottom: double 3px #000000;
-}
-main{
-    width: 100%;
-    background-image: url(../img/city1.jpg) ;
+/*backgrounds */
+
+/* header */
+.header{
+    background-image: url(../img/photo-f.jpg);
     background-size: cover;
-    justify-content: space-between;
-    display: flex;
- 
-}
-main .i{
-    color: var(--third-color);
-    text-align: center;
-    padding-top: 0.1%;
-    justify-self: center;
-    align-items: flex-end;
-    width: fit-content;
-}
-.i #btn{
-    width: fit-content;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
 }
 
-main .i .drop{
-    border: #000000 4px solid;
+
+/* projecten */
+.projecten{
+        width: 100vw;
+        height: 100vh;
+        background-image: url(../img/eb40cd26cf2f9e18cd01b8bc07495121.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-top: 10%;
 }
 
-.drop #list{
-    display: flex;
-}
 
-main .i a{
-    color: var(--icon-color);     
+
+
+/* about me */
+.about {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../img/mountain.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 
-main .i ul li a{
-    list-style: none;
-    padding: 0.5rem;
-    margin: 0.5rem;
-    color: var(--fourth-color);
-}
 
 
-main h1{
-    color: var(--third-color);
-    text-align: center;
-    padding-top: 1rem;
-    mix-blend-mode: difference;
-    justify-self: center;
-}
-main img{
-    position: fixed;
-    mix-blend-mode: difference;
-}
-
-
-.content{
-    display: flex;
-    flex-wrap: nowrap;
-    align-content: center;
-    align-items: flex-start;
-    justify-content: space-between;
-    flex-direction: row-reverse;
-    width: 100%;
-    color: var(--second-color);
-}
-
-
-.carousel-item img{
-    object-fit: cover;
-    border-radius: 10px;
-    box-shadow: 0px 0px 20px var(--main-color);
-}
-
-.text_h{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: center;
-    color: #ffffff;
-}
-
-footer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-self: flex-end;
-    height: 10vh;
+  /* skills */
+  .skills {
     width: 100vw;
-    background-color: var(--foot-color);
-    border-top: double 3px #000000;
-}
-footer h2{
-    color: var(--third-color);
-    text-align: center;
-    padding-top: 1rem;
-    justify-self: center;
-}
+    height: 100vh;
+    background-color:#000000;
+  }
 
-.about{
-    display: flex;
-    align-items: center;
-    height: fit-content;
-    margin-top: 10%;
-    max-width: 40%;
-    flex-direction: column;
-    background-color: var(--main-color);
-    border-top: double 3px #000000;
-    flex-wrap: nowrap;
-    align-content: baseline;
-    margin-left: 6vw;
-}
-.about h1{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 3.3rem;
-    padding-left: 2%;
-    padding-right: 2%;
-    color: var(--second-color);
 
-}
-
-.about p{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 1.5rem;
-    color: var(--second-color);
-    text-align: center;
-    padding: 1rem;
-    margin: 0.5rem;
-    width: 100%;
-}
-
-.cv{
-    align-self: self-end;
-}
-
-.projects{
-    margin-left: 8vw;
+/* contact */
+.contact {
+    width: 100vw;
+    height: 20vh;
+    position: relative;
 }
 
 
 
-#google_translate_element{
-    width: 3vw;
-    height: fit-content;
+
+
+/* favicon */
+.favicon {
+    mix-blend-mode: difference;
+    width: 110px;
+    height: 120px;
+    position: fixed;
+    left: 90px;
+    top: 0px;
+    object-fit: cover;
+  }
+
+
+  .sven-bosman,
+.sven-bosman * {
+  box-sizing: border-box;
 }
 
-.holder{
-    display: grid;
-    grid-template-columns: repeat(2, 20vw);
-    margin-left: 3.6vw;
-    row-gap: 4vh;
-    column-gap: 4vw;
-}
+.sven-bosman {
+    color: #000000;
+    text-align: left;
+    font-family: "Inter-Regular", sans-serif;
+    font-size: 128px;
+    font-weight: 400;
+    position: absolute;
+    left: 470px;
+    bottom: 45vh;
+    width: 850px;
+    height: 120px;
+  }
 
-.proj{
-    display: inherit;
-    grid-template-rows: repeat(2, 17.5vh);
-    grid-template-columns: repeat(1, 20vw);
-    width: 20vw;
-    height: 35vh;
-    border: #000000 1px solid;
-}
+  .rectangle-19 {
+    background: rgba(217, 217, 217, 0);
+    border-style: solid;
+    border-color: #000000;
+    border-width: 0px 0px 5px 0px;
+    width: 850px;
+    height: 126px;
+    position: absolute;
+    left: 460px;
+    top: 280px;
+  }
+
+  .software-dev-design {
+    color: #464545;
+    text-align: left;
+    font-family: "Inter-Regular", sans-serif;
+    font-size: 64px;
+    font-weight: 400;
+    position: absolute;
+    left: 470px;
+    top: 401px;
+    width: 470px;
+    height: 130px;
+  }
 
 
-/* comment */
+
+  .mijn-projecten {
+    color: #ffffff;
+    text-align: left;
+    font-family: "Inter-Regular", sans-serif;
+    font-size: 96px;
+    font-weight: 400;
+    position: absolute;
+    left: 810px;
+    width: 720px;
+    height: 120px;
+  }
+
+
+
+
+  .over-mij {
+    color: #c9c9c9;
+    text-align: left;
+    font-family: "Inter-Regular", sans-serif;
+    font-size: 96px;
+    font-weight: 400;
+    position: absolute;
+    left: 267px;
+  }
+  
+
+  .rectangle-4 {
+    background: #d9d9d9;
+    border-radius: 30px;
+    border-style: solid;
+    border-color: #919191;
+    border-width: 7px;
+    width: 530px;
+    height: 710px;
+    position: absolute;
+    left: 940px;
+  }

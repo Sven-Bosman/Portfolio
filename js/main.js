@@ -5,6 +5,9 @@ let list = document.getElementById("list");
 
 let input = document.getElementById("input");
 
+let win_H = screen.height
+let win_W = screen.width
+
 
 btn.addEventListener("click",  dropdown); 
 
@@ -13,6 +16,9 @@ setInterval(check, 500);
 
 input.addEventListener("keyup", test);
 
+
+
+console.log('Height: '+ win_H,'Width: '+  win_W)
 
 
 
