@@ -1,26 +1,28 @@
 <!DOCTYPE html>
-<html lang="en" class="snap-proximity snap-y scroll-auto">
+<html lang="en" class="snap-mandatory snap-y scroll-auto snap-always">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+
     <link rel="stylesheet" href="css/output.css">
     <title>Portfolio</title>
 </head>
-<body class="max-h-screen  bg-gradient-to-b from-black to-white bg-center">
+<body class="w-fit snap-y snap-mandatory overflow-x-hidden">
 
 
     
-    <div class="header bg-[url(../img/photo-f.jpg)] snap-start bg-cover bg-no-repeat bg-center h-screen w-screen ">
-        <img class="favicon mix-blend-difference fixed pl-16" src="img/favicon.png" />
-        <div class="sven-bosman text-5xl justify-self-center underline pt-72 font-serif">Sven Bosman</div>
-        <div class="software-dev-design text-2xl justify-self-center font-serif italic">Software dev/ design</div>
+    <div class="header bg-[url(../img/photo-f.jpg)] snap-center bg-cover bg-no-repeat bg-center h-screen w-full justify-items-center">
+        <img class="md:favicon mix-blend-difference fixed pl-16 h-24 lg:h-48 md:h-36 sm:h-28" src="img/favicon.png"/>
+        <div class="sven-bosman text-5xl justify-self-center underline pt-72 font-serif justify-items-center">Sven Bosman</div>
+        <div class="software-dev-design text-2xl justify-self-center font-serif italic justify-items-center">Software dev/ design</div>
         <div class="rectangle-19"></div>
         
     </div>
 
 
-    <div class="projecten bg-[url(../img/eb40cd26cf2f9e18cd01b8bc07495121.jpg)] snap-start bg-no-repeat bg-cover bg-center h-screen w-screen">
-        <div class="mijn-projecten text-white text-6xl justify-self-end pr-60 pt-32 font-serif">Mijn projecten</div>
+    <div class="projecten bg-[url(../img/eb40cd26cf2f9e18cd01b8bc07495121.jpg)] snap-center bg-no-repeat bg-cover bg-center h-screen w-full">
+        <div class="mijn-projecten text-white text-6xl justify-self-end pt-32 font-serif pr-20 lg:pr-64 md:pr-40"><h1>Mijn projecten</h1></div>
         <div class="group-1">
           <div class="rectangle-7"></div>
           <div class="rectangle-8"></div>
@@ -28,75 +30,53 @@
         </div>
     </div>
 
-    <div class="about bg-[url(../img/mountain.jpg)] snap-start bg-no-repeat bg-cover bg-center h-screen w-full">
+    <div class="about bg-[url(../img/mountain.jpg)] snap-center bg-no-repeat bg-cover bg-center h-screen w-full">
         <div class="over-mij text-amber-50 text-6xl justify-self-center pt-32 font-serif">Over mij</div>
         <div class="rectangle-4"></div>
     </div>
 
     
-    <div class="skills bg-gradient-to-b from-black to-white bg-center h-screen w-screen ">
-        <div class="rectangle-9">
-
-          <div class="group-2 pt-40 grid grid-cols-3 gap-4">
-            <div class="group-6">
-              <div class="rectangle-10"></div>
-              <img class="group-4" src="group-40.svg" />
-            </div>
-            
-            <div class="group-7">
-              <div class="rectangle-11"></div>
-              <img class="group-5" src="group-50.svg" />
-            </div>
-            
-            <div class="group-13">
-              <div class="rectangle-12"></div>
-              <img class="group-62" src="group-61.svg" />
-            </div>
-            
-            <div class="group-14">
-              <div class="rectangle-13"></div>
-              <img class="group-8" src="group-80.svg" />
-            </div>
-            
-            <div class="group-15">
-              <div class="rectangle-14"></div>
-              <img class="group-9" src="group-90.svg" />
-            </div>
-            
-            <div class="group-16">
-              <div class="rectangle-15"></div>
-              <img class="group-10" src="group-100.svg" />
-            </div>
-            
-            <div class="group-17">
-              <div class="rectangle-16"></div>
-              <img class="group-11" src="group-110.svg" />
-            </div>
-            
-            <div class="group-18">
-              <div class="rectangle-17"></div>
-              <img class="group-12" src="group-120.svg" />
-            </div>
-
-            <div class="group-19">
-              <div class="rectangle-18"></div>
-              <img class="group-13" src="group-130.svg" />
-            </div>
-
-          </div>
-          
+    <div class="skills bg-gradient-to-b from-black to-white bg-center bg-no-repeat sm:bg-no-repeat bg-cover h-screen w-full snap-center pt-14 pb-28 ">
+      <div class="inline-flex flex-column justify-center items-center gap-24 pt-2 w-screen">
         
-          
-          <div class="tools text-white">Tools</div>
-
-            <div class="technische-skills text-white">Technische skills</div>
-              
-            <div class="languages text-white">Languages</div>
+        <div class="tools justify-items-center text-white border-2 border-gray-300 p-4 w-1/2">
+          <h1 class="">Tools</h1>
+          <ul class="grid grid-cols-3 gap-4 justify-items-center text-3xl">
+            <li class="border-2 border-white border-opacity-50 min-w-fit">HTML</li>
+            <li class="border-2 border-white border-opacity-50 min-w-fit">CSS</li>
+            <li class="border-2 border-white border-opacity-50 min-w-fit">JavaScript</li>
+            <li class="border-2 border-white border-opacity-50 min-w-fit">React</li>
+            <li class="border-2 border-white border-opacity-50 min-w-fit">Node.js</li>
+            <li class="border-2 border-white border-opacity-50 min-w-fit">Git</li>
         </div>
+
+        <div class="technische-skills  justify-items-center text-gray-300 border-2 border-gray-300 p-4 w-1/2">
+          <h1>technische-skills</h1>
+          <ul class="grid grid-cols-3 gap-4 justify-items-center text-3xl">
+            <li>Probleemoplossend vermogen</li>
+            <li>Analytisch denken</li>
+            <li>Teamwork</li>
+            <li>Communicatie</li>
+            <li>Creatief denken</li>
+        
+        </div>
+        
+        <div class="languages  justify-items-center border-2 border-black p-4 w-1/2 ">
+          <h1>Talen</h1>
+          <ul class="grid grid-cols-3 gap-4 justify-items-center text-3xl">
+            <li>Nederlands</li>
+            <li>Engels</li>
+            <li>Duits</li>
+            <li>Frans</li>
+          </ul>
+      </div>
+    </div> 
+  </div>
+
     </div>
     
     
-    <div class="contact text-white flex flex-row justify-center items-center h-24 text-2xl font-serif">
+    <div class="contact text-white flex flex-row justify-center items-center h-24 text-2xl font-serif snap-end top-11">
         <div class="rectangle-18"></div>
         <div class="contact2 pr-20">Contact: Sven Bosman</div>
         <div class="mail">Mail: <a href="" >sbos279@gmail.com</a></div>
@@ -107,4 +87,6 @@
       
     
 </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+<script src="js/dev.js"></script>
 </html>

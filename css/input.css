@@ -1,12 +1,7 @@
-@import "tailwindcss";
-@import "tailwindcss/base";
-@import "tailwindcss/base-components";
-@import "tailwindcss/components";
-@import "tailwindcss/utilities";
-@import "tailwindcss/typography";
-@import "tailwindcss/forms";
-@import "tailwindcss/line-clamp";
-@import "tailwindcss/aspect-ratio";
+@import 'tailwindcss';
+
+
+
 @import url('https://fonts.googleapis.com/css2?family=Faculty+Glyphic&family=Island+Moments&display=swap');
 
 
